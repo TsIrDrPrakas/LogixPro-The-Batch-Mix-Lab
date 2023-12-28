@@ -1,0 +1,361 @@
+FILE,LAD 2:
+SOR,0 BST,1 XIC,I:1/0 NXB,1 XIC,O:2/1 BND,1 XIC,I:1/1 XIO,O:2/7 OTE,O:2/1 EOR,0
+RCM,
+SOR,1 BST,1 XIC,I:1/5 CTU,C5:1,275 NXB,1 XIC,I:1/7 CTD,C5:1,275 BND,1 EOR,1
+RCM,
+SOR,2 EQU,C5:1.ACC,275 BST,1 OTL,O:2/7 NXB,1 OTL,B3:0/0 BND,1 EOR,2
+RCM,
+SOR,3 NEQ,C5:1.ACC,275 OTU,O:2/7 EOR,3
+RCM,
+SOR,4 EQU,C5:1.ACC,0 OTU,B3:0/0 EOR,4
+RCM,
+SOR,5 XIC,O:2/7 TON,T4:0,80 EOR,5
+RCM,
+SOR,6 XIC,T4:0/TT OTE,O:2/0 EOR,6
+RCM,
+SOR,7 BST,1 XIC,T4:0/DN NXB,1 XIC,O:2/3 BND,1 XIC,B3:0/0 OTE,O:2/3 EOR,7
+RCM,
+SOR,8 TOD,C5:1.ACC,O:4 EOR,8
+RCM,
+SOR,9 EOR,9
+RCM,
+SOR,10 END,10
+RCM,
+FILE,SBR 3:
+SOR,0 END,0
+RCM,
+FILE,SBR 4:
+SOR,0 END,0
+RCM,
+FILE,SBR 5:
+SOR,0 END,0
+RCM,
+FILE,SBR 6:
+SOR,0 END,0
+RCM,
+FILE,SBR 7:
+SOR,0 END,0
+RCM,
+FILE,SBR 8:
+SOR,0 END,0
+RCM,
+FILE,SBR 9:
+SOR,0 END,0
+RCM,
+BTBL
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+NTBL
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+FTBL
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+SYMBOLS
+I:1/0 Start Pb
+O:2/5 Run Light
+I:1/1 Stop Pb
+O:2/1 Pump 1
+I:1/5 Flow Meter Pump 1
+O:2/7 Full LIght
+I:1/4 High Level
+T4:0 MIXER TIMER
+T4:0/TT MIXER TIMING
+O:2/0 MIXER
+T4:0/DN MIXER DONE
+O:2/3 Pump 3
+I:1/7 Flow Meter Pump 3

@@ -1,0 +1,370 @@
+FILE,LAD 2:
+SOR,0 BST,1 XIC,I:1/0 NXB,1 XIC,B3:0/1 BND,1 XIC,I:1/1 OTE,B3:0/1 EOR,0
+RCM,Start Stop Control
+SOR,1 XIC,B3:0/1 XIO,O:2/7 XIO,B3:0/0 OTE,O:2/1 EOR,1
+RCM,Pump 1 Control
+SOR,2 BST,1 XIC,I:1/5 CTU,C5:1,275 NXB,1 XIC,I:1/7 CTD,C5:1,275 BND,1 EOR,2
+RCM,Flow Counters
+SOR,3 EQU,C5:1.ACC,275 BST,1 OTL,O:2/7 NXB,1 OTL,B3:0/0 BND,1 EOR,3
+RCM,Tank is = 90% full
+SOR,4 NEQ,C5:1.ACC,275 OTU,O:2/7 EOR,4
+RCM,Tank is < 90% full
+SOR,5 EQU,C5:1.ACC,0 BST,1 OTU,B3:0/0 NXB,1 RES,T4:0 BND,1 EOR,5
+RCM,Tank is Empty 0%
+SOR,6 XIC,B3:0/1 XIC,O:2/7 RTO,T4:0,80 EOR,6
+RCM,
+SOR,7 XIC,T4:0/TT OTE,O:2/0 EOR,7
+RCM,Mixer Control
+SOR,8 XIC,B3:0/1 BST,1 XIC,T4:0/DN NXB,1 XIC,O:2/3 BND,1 XIC,B3:0/0 OTE,O:2/3 EOR,8
+RCM,Pump 3 Control
+SOR,9 TOD,C5:1.ACC,O:4 EOR,9
+RCM,BCD
+SOR,10 BST,1 XIC,O:2/1 NXB,1 BST,2 XIC,O:2/3 NXB,2 XIC,O:2/0 BND,2 BND,1 OTE,O:2/5 EOR,10
+RCM,Run Light Control
+SOR,11 XIO,B3:0/1 OTE,O:2/6 EOR,11
+RCM,Idle Light Control
+SOR,12 END,12
+RCM,
+FILE,SBR 3:
+SOR,0 END,0
+RCM,
+FILE,SBR 4:
+SOR,0 END,0
+RCM,
+FILE,SBR 5:
+SOR,0 END,0
+RCM,
+FILE,SBR 6:
+SOR,0 END,0
+RCM,
+FILE,SBR 7:
+SOR,0 END,0
+RCM,
+FILE,SBR 8:
+SOR,0 END,0
+RCM,
+FILE,SBR 9:
+SOR,0 END,0
+RCM,
+BTBL
+3
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+NTBL
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+FTBL
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+SYMBOLS
+I:1/0 Start Pb
+O:2/5 Run Light
+I:1/1 Stop Pb
+O:2/1 Pump 1
+I:1/5 Flow Meter Pump 1
+O:2/7 Full LIght
+I:1/4 High Level
+T4:0 MIXER TIMER
+T4:0/TT MIXER TIMING
+O:2/0 MIXER
+T4:0/DN MIXER DONE
+O:2/3 Pump 3
+I:1/7 Flow Meter Pump 3
+B3:0/1 READY TO START
+B3:0/0 Level Indicator
+C5:1.ACC Tank Level Checking
+C5:1 Tank Level Counter
+O:2/6 Idle Light
